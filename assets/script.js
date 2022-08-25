@@ -35,7 +35,7 @@ $("#clearBtn").click(function (event) {
 $(".saveBtn").click(function (event) {
     event.preventDefault();
     var value = $(this).siblings(".time-text").val();
-    var time = $(this).parent().attr("id").split("-")[1];
+    var time = $(this).parent().attr("id").split("-")[0];
     localStorage.setItem(time, value);
 });
 
@@ -47,6 +47,6 @@ $("#hour13 .time-text").val(localStorage.getItem("13"));
 $("#hour14 .time-text").val(localStorage.getItem("14"));
 $("#hour15 .time-text").val(localStorage.getItem("15"));
 $("#hour16 .time-text").val(localStorage.getItem("16"));
-$("#hour17 .time-text").val(localStorage.getItem(""));
+$("#hour17 .time-text").val(localStorage.getItem("17"));
 
 
