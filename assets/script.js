@@ -1,10 +1,11 @@
 //need to add current date
 //var currentDay = $('#currentDay').html('' + moment().format('dddd, MMMM Do'));
+let currentHour = moment().format("HH");
+
 $(document).ready(function () {
     let timeNow = moment().format("MMMM Do YYYY");
     let displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = timeNow;
-    let currentHour = moment().format("HH");
 });
 
 //clear local storage
@@ -38,7 +39,7 @@ $(".saveBtn").click(function (event) {
     localStorage.setItem(time, value);
 });
 
-$("#hour9 .time-text").val(localStorage.getItem("09"));
+$("#hour09 .time-text").val(localStorage.getItem("09"));
 $("#hour10 .time-text").val(localStorage.getItem("10"));
 $("#hour11 .time-text").val(localStorage.getItem("11"));
 $("#hour12 .time-text").val(localStorage.getItem("12"));
