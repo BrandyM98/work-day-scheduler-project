@@ -25,13 +25,16 @@
     <p class="lead">A great way to stay organized!</p>
     <p id="currentDay" class="lead"></p>
     <!--need to format for current day to populate in header-->
+    <button id="clearBtn" class="clearSchBtn">
+      Clear
+    </button>
   </header>
 
   <div class="container">
     <!-- Timeblocks go here -->
     <!--9am-->
     <div id="hour9" class="row">
-      <div class="col-md-1 date">0900</div>
+      <div class="col-md-1 date"><span id="09">0900</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -39,7 +42,7 @@
     </div>
     <!--10am-->
     <div id="hour10" class="row">
-      <div class="col-md-1 date">1000</div>
+      <div class="col-md-1 date"><span id="10">1000</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -47,7 +50,7 @@
     </div>
     <!--11am-->
     <div id="hour11" class="row">
-      <div class="col-md-1 date">1100</div>
+      <div class="col-md-1 date"><span id="11">1100</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -55,7 +58,7 @@
     </div>
     <!--12am-->
     <div id="hour12" class="row">
-      <div class="col-md-1 date">1200</div>
+      <div class="col-md-1 date"><span id="12">1200</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -63,7 +66,7 @@
     </div>
     <!--1pm-->
     <div id="hour13" class="row">
-      <div class="col-md-1 date">1300</div>
+      <div class="col-md-1 date"><span id="13">1300</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -71,7 +74,7 @@
     </div>
      <!--2pm-->
      <div id="hour14" class="row">
-      <div class="col-md-1 date">1400</div>
+      <div class="col-md-1 date"><span id="14">1400</span></div>
       <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
       <button class="col-md-1 saveBtn">
         <i class="fas fa-lock"></i>
@@ -79,7 +82,7 @@
     </div>
       <!--3pm-->
       <div id="hour15" class="row">
-        <div class="col-md-1 date">1500</div>
+        <div class="col-md-1 date"><span id="15">1500</span></div>
         <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
         <button class="col-md-1 saveBtn">
           <i class="fas fa-lock"></i>
@@ -87,7 +90,7 @@
       </div>
        <!--4pm-->
        <div id="hour16" class="row">
-        <div class="col-md-1 date">1600</div>
+        <div class="col-md-1 date"><span id="16">1600</span></div>
         <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
         <button class="col-md-1 saveBtn">
           <i class="fas fa-lock"></i>
@@ -95,7 +98,7 @@
       </div>
         <!--5pm-->
         <div id="hour17" class="row">
-          <div class="col-md-1 date">1700</div>
+          <div class="col-md-1 date"><span id="17">1700</span></div>
           <textarea class="col-md-10 text" placeholder="Add schedule item here"></textarea>
           <button class="col-md-1 saveBtn">
             <i class="fas fa-lock"></i>
@@ -108,6 +111,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src= "./assets/script.js"></script>
 </body>
 
 </html>
