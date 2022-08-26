@@ -37,7 +37,10 @@ $(".saveBtn").click(function (event) {
     var value = $(this).siblings(".time-text").val();
     var time = $(this).parent().attr("id").split("-")[0];
     localStorage.setItem(time, value);
+
+    //console.log(time);
 });
+
 
 $("#hour09 .time-text").val(localStorage.getItem("09"));
 $("#hour10 .time-text").val(localStorage.getItem("10"));
